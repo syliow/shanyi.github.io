@@ -42,6 +42,10 @@ html {
     align-content: space-around;
 }
 
+.container-bar{
+    display:flex;
+    
+}
 
 .btn-login{
    color:black;
