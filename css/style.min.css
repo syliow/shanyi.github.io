@@ -1,70 +1,145 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 .view,
 body,
 html {
-    height: 100%
+  height: 100%;
 }
 
 .carousel {
-    height: 50%
+  height: 50%;
 }
 
 .carousel .carousel-inner,
 .carousel .carousel-inner .active,
 .carousel .carousel-inner .carousel-item {
-    height: 100%
+  height: 100%;
 }
 
-@media (max-width:776px) {
-    .carousel {
-        height: 100%
-    }
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%;
+  }
 }
 
+/* Homepage services */
+.service-item {
+  text-align: center;
+}
 
+.icon i {
+  border-radius: 50%;
+  border: 16px solid #f78e21;
+  color: #f78e21;
+  font-size: 28px;
+  line-height: 80px;
+  width: 120px;
+  height: 120px;
+}
 
+.service-item h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
 
+/* header */
+.heading-section {
+  margin: 50px 0px 40px 0px;
+}
 
+.heading-section h2 {
+  text-align: center;
+}
+
+.service-item {
+  margin: 10px 0px 60px 0px;
+}
+
+/* Order Button */
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 50px 50px 80px;
+}
+
+.order-btn {
+  padding: 50px;
+  width: 350px;
+}
+
+hr {
+  border:solid 1.8px red;
+
+}
+
+/* footer */
 .page-footer {
-    background-color: #929FBA
+  background-color: #929fba;
 }
 
-.background-image{
-    background-size:cover;
-    
+.background-image {
+  background-size: cover;
 }
 
+.top-nav {
+  widows: 1000px;
+  height: 90px;
+}
 
 /* Header Nav Bar */
-.top-container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: space-around;
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
-.container-bar{
-    display:flex;
-    
+.container-bar {
+  display: flex;
 }
 
-.btn-login{
-   color:black;
-   background-color: red;
-   border-radius: 20px;
-   height: 45px;
-   width:130px;
-   margin-top: 0px;
+.btn-login {
+  color: black;
+  background-color: red;
+  border-radius: 20px;
+  height: 45px;
+  width: 130px;
+  margin-top: 0px;
+}
+
+.btn-signup {
+  color: black;
+  border-radius: 20px;
+  height: 45px;
+  width: 130px;
+  margin-top: 0px;
+}
+
+.logo {
+  float: left;
+  padding-right: 70px;
+}
+
+/* Seperator */
+.sep-1{
+  text-align: center;
+  font-size: 3em;
+  padding:180px 0 180px 0; 
+}
+
+
+
+  
    
-}
-
-
-.btn-signup{
-    color:black;
-    border-radius: 20px;
-    height:45px;
-    width:130px;
-    margin-top:0px;
-}
 
 
 
@@ -75,12 +150,15 @@ html {
 
 
 /* Footer Icon */
-.fa-facebook{
-    font-size: 18px;
-    
-
+.fa-facebook {
+  font-size: 18px;
 }
 
-.fa-twitter{
-    font-size:18px;
+.fa-twitter {
+  font-size: 18px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0px;
 }
