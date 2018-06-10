@@ -1,65 +1,435 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Welcome To MDIS Cafe</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>MDIS CAFE</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
 
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 60vh;
+    }
+
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+    }
+  </style>
 </head>
-<!-- 
-<body>
-    <div class="container row col-xs-12 col-lg-12 my-auto">
-        <h1><strong> Welcome To My Website</strong> </h1>
-    </div>
-    <div class="col-lg-12 ">
-        <button type="button" class="btn btn-primary btn-block ">Find Out More</button>
-    </div>
-</body>
- -->
 
 <body>
-    <header class="startup text-center text-white d-flex">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-12 my-auto">
-                    <h1 class="text-uppercase faded">
-              <strong>Welcome To MDIS CAFE</strong>
-            </h1>
-                    <hr>
-                </div>
-                <div class="col-lg-12 my-auto">
-                   
-                   
-                    <div id="mc_embed_signup">
-                       
-                                
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                                    <input type="text" name="b_b3119df8dd34be4fe2bad17ce_f35a995364" tabindex="-1" value="">
-                                </div>
-                                <div class="clear">
-                                  <a href="homepage.html">  <input  class="btn btn-primary btn-xl-6" type="submit" value="Dine In " name="subscribe" id="mc-embedded-subscribe" class="button">
-                                    
-                                </a>
-                                </div>
 
-                                
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar top-nav">
+    <div class="container-fluid">
 
-                                <div class="clear">
-                                   <a href="homepage.html"> <input  class="btn btn-primary btn-xl-6" type="submit" value="Take Away" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                    </a>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!--End mc_embed_signup-->
-                    
+      <!-- Brand -->
+      <a class="navbar-brand waves-effect" href="homepage.html" target="_self">
+        <div class="logo">
+        <img src="img/logo.jpg" height="80px" width=140px" >
+
+      </a>
+    </div>
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#" target="_self">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="menu.html" target="_self"> Our Menu</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link waves-effect" href="#">Promotions
+             
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="#" target="_self">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+      
+         <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link waves-effect">
+              
+              
+              <div class="top-container">
+              <i class="fa fa-shopping-cart"></i><span class="clearfix d-none d-sm-inline-block"> Cart </span></i>
+             
+              <!-- Sign up and Login Button -->
+              <a href="#"><button type="button" class="btn btn-login" role="button" target="_self">Login</button></a>
+              <a href="#"><button type="button" class="btn btn-signup" role="button" target="_self">Sign Up </button></a>
+            </div>
+            </a>
+          </li>
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('img/slides/campus.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Title</strong>
+              </h1>
+
+              <p>
+                <strong>Description</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic?</strong>
+              </p>
+
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg">Find Out More
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('img/slides/food1.jpeg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Title</strong>
+              </h1>
+
+              <p>
+                <strong>Description</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, modi!</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Find Out More
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('img/slides/food2.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Title</strong>
+              </h1>
+
+              <p>
+                <strong>Description</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, enim?</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-outline-white btn-lg">Start free tutorial
+                <i class="fa fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!-- Middle Paragraph -->
+  <div id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading-section">
+                    <h2>Food Ordering in 4 simple steps 
+                      <i class="fa fa-check" style="font-size:40px"></i></h2>
+                    <img src="images/under-heading.png" alt="" >
                 </div>
             </div>
         </div>
-    </header>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-pencil"></i>
+                    </div>
+                    <h4>Make an order</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-bullhorn"></i>
+                    </div>
+                    <h4>Promotions</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-bell"></i>
+                    </div>
+                    <h4>Ready to Serve</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <h4>Enjoy Your Meal</h4>
+                    <p>Sed egestas tincidunt mollis. Suspendisse rhoncus vitae enim et faucibus. Ut dignissim nec arcu nec hendrerit. Sed arcu  sagittis vel diam in, malesuada malesuada risus. Aenean a sem leoneski.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+
+
+
+<!-- Bottom Menu -->
+<!-- 1st Seperator -->
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-xl-6 sep-1">
+       Good Environment
+      </div>
+      <div class="col-md-6 col-lg-6 col-xl-6">
+        <img width ="700" height="455" src="img/seperate/photo1.jpeg">
+      </div>
+    </div>
+
+    <!-- 2nd Seperator -->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-6 col-lg-6 col-xl-5 sep-2">
+              <img width ="700" height="455" src="img/seperate/photo2.jpeg">
+            </div>
+          </div>
+        <div class="col-md-6 col-lg-6 col-xl-6">
+         Good Coffee
+        </div>
+        
+
+      <!-- 3rd Seperator -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-xl-6 sep-3">
+           Good Environment
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-6">
+            <img width ="700" height="455" src="img/seperate/photo3.jpeg">
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<hr>
+<!-- Order Button -->
+<div class="btn-container">
+<div class="btn-group" role="group" aria-label="Order">
+    <button type="button" class="btn order-btn">Dine In</button>
+  
+    
+    <button type="button" class="btn  order-btn">Takeaway</button>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!--Footer-->
+  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+  
+  
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2018 Copyright:
+      <a href="#" target="_blank"> MDIS CAFE </a>
+      
+         
+            <a href="https://www.facebook.com/KMDISM" class="nav-link waves-effect" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+         
+         
+            <a href="https://twitter.com/mdis_myglobally?lang=en" class="nav-link waves-effect" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+         
+          
+        </ul> 
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
 </body>
 
 </html>
