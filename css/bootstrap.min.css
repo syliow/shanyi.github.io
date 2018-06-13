@@ -5377,6 +5377,11 @@ fieldset:disabled a.btn {
     opacity: .5
 }
 
+.fade.in {
+    opacity: 0.6;
+  }
+
+
 .popover,
 .tooltip {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -5489,7 +5494,7 @@ button.close {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1040;
+    z-index: -1;
     background-color: #000
 }
 
