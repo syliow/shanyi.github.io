@@ -84,6 +84,31 @@ html {
   margin: 10px 0px 60px 0px;
 }
 
+/* menu gallery */
+.view .img {
+  background-color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Seperator */
 
 @media (min-width: 768px) {
@@ -147,17 +172,6 @@ html {
  
 } 
 
-
-
-
-
-
-
-
-
-
-
-
 /* 
 Order Button */
 
@@ -184,7 +198,7 @@ Order Button */
 }
 
 
-
+/* Horizontal Line */
 hr {
   border: solid 1.8px red;
 }

@@ -45,14 +45,17 @@
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
+ <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar top-nav">
+    <div class="container-fluid">
 
       <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_self">
-        <strong class="blue-text">MDIS Malaysia</strong>
+      <a class="navbar-brand waves-effect" href="index.html" target="_self">
+        <div class="logo">
+        <img src="img/logo.jpg" height="80px" width=140px" >
+
       </a>
+    </div>
 
       <!-- Collapse -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -66,16 +69,14 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link waves-effect" href="homepage.html">Home
-      
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link waves-effect" href="#" target="_self">About Us</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#" target="_self">Our Menu
-                <span class="sr-only">(current)</span>
+          <li class="nav-item">
+            <a class="nav-link waves-effect" href="menu.html" target="_self"> Our Menu</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link waves-effect" href="#">Promotions
+             
             </a>
           </li>
           <li class="nav-item">
@@ -84,28 +85,157 @@
         </ul>
 
         <!-- Right -->
-
-        <ul class="navbar-nav nav-flex-icons">
+      
+         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
             <a class="nav-link waves-effect">
-
-
+              
+              
               <div class="top-container">
-                <i class="fa fa-shopping-cart"></i>
-                <span class="clearfix d-none d-sm-inline-block"> Cart </span>
-                </i>
+              <i class="fa fa-shopping-cart"></i><span class="clearfix d-none d-sm-inline-block"> Cart </span></i>
+             
 
-                <!-- Sign up and Login Button -->
-                <a href="#">
-                  <button type="button" class="btn btn-login" role="button" target="_self">Login</button>
-                </a>
-                <a href="#">
-                  <button type="button" class="btn btn-signup" role="button" target="_self">Sign Up </button>
-                </a>
-              </div>
+              <!-- Login Form -->
+              <a href="#modalContactForm "> <button type="button" class="btn btn-login" role="button" data-toggle="modal" data-target="#loginForm">Login</button> </a>
+              <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="loginFormLabel" aria-hidden="true">
+                <!--Modal: Contact form-->
+                <div class="modal-dialog cascading-modal" role="document">
+            
+                    <!--Content-->
+                    <div class="modal-content">
+            
+                        <!--Header-->
+                        <div class="modal-header primary-color white-text">
+                            <h4 class="title">
+                                Login   </h4>
+                            <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body">
+            
+                            <!-- Material input name -->
+                            <div class="md-form form-sm mb-3">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
+                                <label for="materialFormNameModalEx1">Your Email: </label>
+                            </div>
+            
+                            <!-- Material input email -->
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="materialFormEmailModalEx1 " class="form-control form-control-sm">
+                                <label for="materialFormEmailModalEx1">Your Password: </label>
+                            </div>
+                            
+                            <div class="custom-control custom-checkbox mb-3">
+                              <input type="checkbox" class="custom-control-input" id="checkBox1">
+                              <label class="custom-control-label" for="checkBox1">Remember Me</label>
+                              
+                            </div>
+                          
+            
+                            <div class="text-center mt-4 mb-2">
+                                <button class="btn btn-primary">Send
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center text-md-right mt-1">
+                                    <a href="#"> Forgot Password ?</a>
+                                </div>
+                                
+                            </div>
+
+            
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+                <!--/Modal: Contact form-->
+            </div>
+
+            <!-- Sign Up -->
+            
+            <button type="button" class="btn btn-signup" role="button" data-toggle="modal" data-target="#signUpForm">Sign Up </button></a>
+              <div class="modal fade" id="signUpForm" tabindex="-1" role="dialog" aria-labelledby="signUpLabel" aria-hidden="true">
+                <!--Modal: Contact form-->
+                <div class="modal-dialog cascading-modal" role="document">
+            
+                    <!--Content-->
+                    <div class="modal-content">
+            
+                        <!--Header-->
+                        <div class="modal-header primary-color white-text">
+                            <h4 class="title">
+                                <i class="fa fa-pencil"></i>Sign Up</h4>
+                            <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body">
+            
+                            <!-- Material input name -->
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-user prefix"></i>
+                                <input type="text" id="SignUpForm1" class="form-control form-control-sm validate">
+                                <label for="SignUpForm1">Your Full Name: </label>
+                            </div>
+            
+                            <!-- Material input email -->
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="SignUpForm2" class="form-control form-control-sm validate">
+                                <label data-error="Invalid"  for="SignUpForm2">Your email: </label>
+                            </div>
+
+                            <!-- Material input name -->
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="SignUpForm3" class="form-control form-control-sm validate">
+                                <label for="SignUpForm3">Your Password: </label>
+                            </div>
+
+                            <!-- Material input name -->
+                            <div class="md-form form-sm mb-5">
+                                <i class="fas fa-exclamation-triangle prefix"></i>
+                                 <input type="password" id="SignUpForm4" class="form-control form-control-sm validate">
+                                <label for="SignUpForm4">Please Confirm Your Password: </label>
+                            </div>
+            
+                            <!-- Material input email -->
+                            <div class="md-form form-sm mb-4">
+                                <i class="fas fa-mobile-alt prefix"></i>
+                                <input type="text" id="SignUpForm5" class="form-control form-control-sm validate">
+                                <label for="SignUpForm5">Your Phone Number: </label>
+                            </div>
+            
+                            <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="checkBox2">
+                                <label class="custom-control-label" for="checkBox2"><a href="termservices.html " target="_blank">I agree to the the Terms and Services </a></label>
+                               </div> 
+                                
+            
+                            <div class="text-center mt-4 mb-2">
+                                <button class="btn btn-primary">Send
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+            
+                        </div>
+                    </div>
+                    <!--/.Content-->
+                </div>
+                <!--/Modal: Contact form-->
+            </div>
+            <!-- End of Forms -->
+            </div>
             </a>
           </li>
-
+          
         </ul>
 
       </div>
@@ -375,12 +505,12 @@
                   <h5>
                     <strong>
                       <a href="" class="dark-grey-text">Chicken Rice
-                        <span class="badge badge-pill danger-color">NEW</span>
+                        
                       </a>
                     </strong>
                   </h5>
-  
-                  <h4 class="font-weight-bold blue-text">
+                  <br>
+                  <h4 class="font-weight-bold blue-text pt-2">
                     <strong>RM 8.0</strong>
                   </h4>
   
