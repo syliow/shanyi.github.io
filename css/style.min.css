@@ -35,9 +35,14 @@ html {
 
 .carousel .carousel-inner,
 .carousel .carousel-inner .active,
-.carousel .carousel-inner .carousel-item {
+.carousel .carousel-inner .carousel-item  {
   height: 100%;
 }
+
+
+
+
+
 
 @media (max-width: 776px) {
   .carousel {
@@ -85,10 +90,6 @@ html {
 }
 
 /* menu gallery */
-.view .img {
-  background-color:red;
-}
-
 
 
 
@@ -209,6 +210,7 @@ hr {
 }
 .page-footer {
   background-color: #929fba;
+ 
 }
 
 .background-image {
@@ -255,5 +257,3 @@ hr {
   float: left;
   padding-right: 70px;
 }
-
-

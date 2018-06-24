@@ -1,0 +1,34 @@
+.page-footer {
+ 
+   position: fixed;
+   width:100%;
+}
+
+
+/* Lightbox */
+.card img{
+    border-radius: 50px;
+    border: #804C15 6px solid;
+    width: 80%;
+    opacity:1.0;
+    cursor:zoom-in;
+    z-index: -1;
+  } 
+  
+  .card img:hover{
+    opacity:0.6;
+  }
+  
+  .tz-gallery {
+    margin:100px 0px 200px 0px;
+  }
+  
+  .modal-backdrop.show {
+    opacity : 0.6 !important;
+  }
+
+  .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    
+}
+
