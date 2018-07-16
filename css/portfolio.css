@@ -1,0 +1,57 @@
+body{
+	font-family: 'Rubik', sans-serif;
+}
+
+.navbar {
+	background-color:black;
+}
+
+
+
+
+.progress-bar{
+	background-color:#566573   !important;
+
+}
+
+.btn-large {
+	border-radius: 100px !important;
+	margin-top: 40px !important;
+}
+
+/*.container {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+*/
+.skills {
+	margin-right: 180px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.introduce p{
+
+	text-align: justify;
+}
+
+#about .container {
+
+	display:flex;
+	justify-content: space-between;
+}
+
+strong { 
+	font-weight: bold; 
+}
+
+.info-list span {
+
+	font-size: 20px;
+}
+
